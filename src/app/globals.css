@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,10 +28,99 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'Gotham';
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire background */
+  z-index: -1; /* Place the video behind other content */
+}
+
+/* Optional: Overlay to enhance visibility of content */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 0; /* Ensure the overlay stays behind the video */
+}
+
+/* Optional: Content styling */
+.content {
+  position: fixed; /* Position content relative to the viewport */
+  z-index: 1; /* Ensure the content stays above the video */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 145px;
+  /* background: linear-gradient(180deg,#0667b0,rgba(6,103,176,.521) 66.67%,rgba(6,103,176,0)); */
+  align-items: center;
+  width: 100%;
+}
+
+.bg-main {
+  background-image: url('../resources/img/bg-main.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+}
+
+.bg-what-is {
+  background-image: url('../resources/img/bg-what-is.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 30%;
+}
+
+.bg-what-includes {
+  background-image: url('../resources/img/bg-what-includes.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 30%;
+}
+
+.bg-visit {
+  background-image: url('../resources/img/visit.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 30%;
+}
+
+.bg-practical-info {
+  background: linear-gradient(90deg, #231F20 0%, rgba(214,73,40,1) 50%, rgba(255,255,255,1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 30%;
+}
+
+.bg-tickets {
+  background: rgb(214,73,40);
+background: -moz-linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 50%, rgba(214,73,40,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 50%, rgba(214,73,40,1) 100%);
+background: linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 50%, rgba(214,73,40,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d64928",endColorstr="#d64928",GradientType=1);
+}
+
+.text-shadow {
+  text-shadow: 0px 2px 5px black;
+}
+
+.rounded-circle {
+  min-width: 45px;
+  max-width: 45px !important;
+  border-radius: 100%;
 }
