@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div className="content nav flex justify-between text-xl font-bold bg-dark" style={{ 'fontFamily': 'montilivi' }}>
             <a className="ps-5" href="#main-section">
-                <Image width={80} height={80} src={Logo} className="aspect-square" alt="Tour Interactivo logo" />
+                <Image width={100} height={100} src={Logo} className="aspect-square" alt="Tour Interactivo logo" />
             </a>
             <div className="flex flex-row gap-20">
                 <Link href="#what-is-section">
