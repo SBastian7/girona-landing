@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 import Carousel from "./ui/Carousel";
-import IconVR from '@/resources/img/icon-vr.webp';
-import IconMap from '@/resources/img/mapa.webp';
+import IconVR from '@/resources/img/icon-vr.png';
+import IconMap from '@/resources/img/mapa.png';
 
 export interface CarouselItem {
     title: string;

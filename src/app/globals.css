@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #fff;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -73,28 +73,28 @@ video {
 }
 
 .bg-main {
-  background-image: url('../resources/img/bg-main.webp');
+  background-image: url('../resources/img/bg-main.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 70%;
 }
 
 .bg-what-is {
-  background-image: url('../resources/img/bg-what-is.webp');
+  background-image: url('../resources/img/bg-what-is.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 30%;
 }
 
 .bg-what-includes {
-  background-image: url('../resources/img/bg-what-includes.webp');
+  background-image: url('../resources/img/bg-what-includes.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 30%;
 }
 
 .bg-visit {
-  background-image: url('../resources/img/visit.webp');
+  background-image: url('../resources/img/visit.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 30%;
@@ -109,10 +109,10 @@ video {
 
 .bg-tickets {
   background: rgb(214,73,40);
-background: -moz-linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 50%, rgba(214,73,40,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 50%, rgba(214,73,40,1) 100%);
-background: linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 50%, rgba(214,73,40,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d64928",endColorstr="#d64928",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 45%, rgba(35,31,32,1) 55%, rgba(214,73,40,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 45%, rgba(35,31,32,1) 55%, rgba(214,73,40,1) 100%);
+  background: linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 45%, rgba(35,31,32,1) 55%, rgba(214,73,40,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d64928",endColorstr="#d64928",GradientType=1);
 }
 
 .text-shadow {
@@ -123,4 +123,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d64928",endCo
   min-width: 45px;
   max-width: 45px !important;
   border-radius: 100%;
+}
+
+@media screen and (max-width:720px) {
+  .rounded-circle {
+    min-width: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    min-height: 25px;
+    border-radius: 100%;
+  }
 }

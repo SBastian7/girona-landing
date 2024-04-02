@@ -38,7 +38,7 @@ function Carousel({ items }: CarouselProps) {
             >
                 <Image src={ArrowLeft} alt='prev-arrow' width={60}></Image>
             </button>
-            <div className="carousel-container flex w-2/6 text-center mt-12 gap-3 overflow-hidden relative">
+            <div className="carousel-container flex w-5/6 md:w-2/6 text-center mt-12 gap-3 overflow-hidden relative">
                 <div
                     className="carousel-track flex transition-transform duration-500 text-shadow"
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }} // Change from 100% to 50%
@@ -46,11 +46,11 @@ function Carousel({ items }: CarouselProps) {
                     {
                         items?.map((item) => (
                             <div key={item.title} className="carousel-slide flex flex-col min-w-full items-center">
-                                <div className='text-4xl gothamBold'>{item.title}</div>
+                                <div className='text-xl md:text-4xl gothamBold'>{item.title}</div>
                                 <div className="mx-auto">
                                     <Image src={item.icon} width={100} alt="bstadium-vr-icon" />
                                 </div>
-                                <div className='text-xl mt-6'>
+                                <div className='text-lg md:text-xl mt-6'>
                                     {item.description}
                                 </div>
                             </div>

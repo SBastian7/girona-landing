@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from '@/resources/img/logo.webp'
+import Logo from '@/resources/img/logo.png'
 import Link from "next/link";
 
 function Navbar() {
@@ -8,7 +8,7 @@ function Navbar() {
             <a className="ps-5" href="#main-section">
                 <Image width={100} height={100} src={Logo} className="aspect-square" alt="Tour Interactivo logo" />
             </a>
-            <div className="flex flex-row gap-20">
+            <div className="w-3/6 justify-evenly hidden md:flex">
                 <Link href="#what-is-section">
                     ¿Qué es?
                 </Link>
