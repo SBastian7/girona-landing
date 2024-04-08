@@ -62,11 +62,11 @@ video {
 /* Optional: Content styling */
 .content {
   position: fixed; /* Position content relative to the viewport */
-  z-index: 1; /* Ensure the content stays above the video */
+  z-index: 3; /* Ensure the content stays above the video */
   color: white;
   text-align: center;
   padding: 20px;
-  height: 145px;
+  height: 16vh;
   /* background: linear-gradient(180deg,#0667b0,rgba(6,103,176,.521) 66.67%,rgba(6,103,176,0)); */
   align-items: center;
   width: 100%;
@@ -77,6 +77,8 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 70%;
+  position: relative;
+
 }
 
 .bg-what-is {
@@ -84,20 +86,59 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 30%;
+  position: relative;
 }
 
-.bg-what-includes {
+.bg-main::after,
+.bg-what-is::after,
+.bg-what-includes-0::after,
+.bg-what-includes-1::after,
+/* .bg-visit::after, */
+.bg-what-is::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(90, 73, 73, 0.5); /* White color with 20% opacity */
+  z-index: 1; /* Ensure the white layer is above the background image */
+}
+.bg-main>*,
+.bg-what-includes>*,
+.bg-what-includes-0>*,
+.bg-what-includes-1>*,
+.bg-visit>*,
+.bg-what-is>* {
+  position: relative;
+  z-index: 2; /* Ensure the white layer is above the background image */
+}
+
+.bg-what-includes-0 {
   background-image: url('../resources/img/bg-what-includes.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 30%;
+  position: relative;
 }
 
-.bg-visit {
-  background-image: url('../resources/img/visit.jpg');
+.bg-what-includes-1 {
+  background-image: url('../resources/img/vr-tour.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 30%;
+  position: relative;
+}
+
+
+.bg-visit {
+  background: -moz-linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,1) 45%, rgba(35,31,32,1) 55%, rgba(214,73,40,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,1) 45%, rgba(35,31,32,1) 55%, rgba(214,73,40,1) 100%);
+  background: linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,1) 45%, rgba(35,31,32,1) 55%, rgba(35,31,32,1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 30%;
+  position: relative;
 }
 
 .bg-practical-info {
@@ -117,6 +158,10 @@ video {
 
 .text-shadow {
   text-shadow: 0px 2px 5px black;
+}
+
+.text-shadow-sm {
+  text-shadow: 0px 1px 3px black;
 }
 
 .rounded-circle {
