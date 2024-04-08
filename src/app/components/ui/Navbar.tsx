@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Logo from '@/resources/img/logo.png'
-import Link from "next/link";
+
 
 function Navbar() {
     return (
@@ -9,21 +9,21 @@ function Navbar() {
                 <Image width={100} height={100} src={Logo} className="aspect-square" alt="Tour Interactivo logo" />
             </a>
             <div className="w-3/6 justify-evenly hidden md:flex">
-                <Link href="#what-is-section">
+                <a href="#what-is-section">
                     ¿Qué es?
-                </Link>
-                <Link href="#what-includes-section">
+                </a>
+                <a href="#what-includes-section">
                     ¿Qué incluye?
-                </Link>
-                <Link href="#itinerary-section">
+                </a>
+                <a href="#itinerary-section">
                     Itinerario
-                </Link>
-                <Link href="#practical-info-section">
+                </a>
+                <a href="#practical-info-section">
                     Información práctica
-                </Link>
-                <Link href="#tickets-section">
+                </a>
+                <a href="#tickets-section">
                     Entradas
-                </Link>
+                </a>
             </div>
             <div className="pe-5 flex gap-2">
                 <div className="">CAS</div>
