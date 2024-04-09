@@ -132,10 +132,10 @@ video {
 
 
 .bg-visit {
-  background: rgb(35,31,32);
-  background: -moz-radial-gradient(circle at bottom, rgba(214,73,40,0.5) 0%, rgba(35,31,32,1) 50%, rgba(35,31,32,1) 100%);
+  background: rgb(146,142,141);
+  /* background: -moz-radial-gradient(circle at bottom, rgba(214,73,40,0.5) 0%, rgba(35,31,32,1) 50%, rgba(35,31,32,1) 100%);
   background: -webkit-radial-gradient(circle at bottom, rgba(214,73,40,0.5) 0%, rgba(35,31,32,1) 50%, rgba(35,31,32,1) 100%);
-  background: radial-gradient(circle at bottom, rgba(214,73,40,0.5) 0%, rgba(35,31,32,1) 50%, rgba(35,31,32,1) 100%);
+  background: radial-gradient(circle at bottom, rgba(214,73,40,0.5) 0%, rgba(35,31,32,1) 50%, rgba(35,31,32,1) 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endColorstr="#d64928",GradientType=1);
 
 

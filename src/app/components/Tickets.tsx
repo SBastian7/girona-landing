@@ -30,9 +30,9 @@ function Tickets() {
             </div>
 
             <div className="my-10">
-                <div className="gothamFont text-3xl">
+                {/* <div className="gothamFont text-3xl">
                     Descubre y disfruta del
-                </div>
+                </div> */}
                 <br />
                 <div className="montiliviFont uppercase text-5xl">
                     Montilivi Tour Interactivo
@@ -42,10 +42,10 @@ function Tickets() {
             <div className="pt-10">
                 <Image width={150} height={150} src={Logo} className="aspect-square" alt="Tour Interactivo logo" />
             </div>
-            <div className="flex items-center justify-center gap-5 text-xl pb-10">
+            <a target="_blank" href="https://bstadium.es" className="flex items-center justify-center gap-5 text-xl pb-10">
                 Powered by
                 <Image width={150} height={150} src={LogoBstadium} className="aspect-square" alt="Tour Interactivo logo" />
-            </div>
+            </a>
         </section>
     );
 }

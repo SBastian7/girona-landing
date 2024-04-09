@@ -19,7 +19,7 @@ function Navbar() {
                     Itinerario
                 </a>
                 <a href="#practical-info-section">
-                    Información práctica
+                    Info práctica
                 </a>
                 <a href="#tickets-section">
                     Entradas
