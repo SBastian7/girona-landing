@@ -1,10 +1,11 @@
 import Button from "./ui/Button";
+import NextSectionChevron from "./ui/NextSectionChevron";
 
 function Landing() {
     return (
-        <section id="main-section" className="main-content bg-main flex flex-col items-center text-shadow-sm justify-center" style={{ minHeight: '100vh', paddingTop: '16vh' }}>
+        <section id="main-section" className="main-content bg-main flex flex-col items-center text-shadow-sm justify-center" style={{ minHeight: '100vh' }}>
             <div className="montiliviFont text-5xl md:text-9xl">
-                TOUR MONTILIVI
+                MONTILIVI TOUR INTERACTIVO
             </div>
             <div className="gothamBold text-xl md:text-4xl xl:text-6xl">
                 Visita el estadio del Girona FC
@@ -15,6 +16,7 @@ function Landing() {
             <div className="mt-10">
                 <Button variant="secondary" title="Comprar entradas" link="https://bstadium.es/tours-originales/" />
             </div>
+            <NextSectionChevron target='#what-is-section' />
         </section>
     );
 }

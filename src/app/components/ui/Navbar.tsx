@@ -12,7 +12,7 @@ function Navbar() {
                 <a href="#what-is-section">
                     ¿Qué es?
                 </a>
-                <a href="#what-includes-section">
+                <a href="#what-includes-section-0">
                     ¿Qué incluye?
                 </a>
                 <a href="#itinerary-section">

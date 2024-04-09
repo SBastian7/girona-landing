@@ -3,7 +3,7 @@ import "./globals.css";
 import './fonts.css';
 
 export const metadata: Metadata = {
-  title: "Tour interactivo",
+  title: "Montilivi Tour interactivo",
   description: "Powered by Bstadium",
 };
 

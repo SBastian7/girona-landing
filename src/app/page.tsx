@@ -15,12 +15,13 @@ export default function Home() {
   // console.log("AAAA ", locale, locales, defaultLocale)  
   return (
     <main>
+      <div className="bg-secondary hidden"></div>
       <Navbar />
       <Landing />  
       <WhatIs /> 
       <WhatIncludes />
       <Itinerary />
-      <div className="bg-tickets">
+      <div className="bg-practical-info ">
         <PracticalInfo />
         <Tickets />
       </div>

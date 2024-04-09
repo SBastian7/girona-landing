@@ -12,7 +12,7 @@ function Button({ title, link, variant, action }: ButtonTypes) {
     }
 
     return (
-        <div className={`bg-${variant ? variant : 'primary'} hover:bg-opacity-95 px-6 py-3 cursor-pointer montiliviFont text-3xl`} onClick={handleClick}>
+        <div className={`bg-${variant ? variant : 'primary'} hover:bg-opacity-95 px-8 py-3 cursor-pointer montiliviFont text-3xl rounded-full`} onClick={handleClick}>
             {title}
         </div>
     );
