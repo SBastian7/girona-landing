@@ -3,7 +3,7 @@ import NextSectionChevron from "./ui/NextSectionChevron";
 function PracticalInfo() {
     return (
         <section id="practical-info-section" className="main-content flex flex-col items-center justify-center min-h-screen text-shadow" >
-            <div className="text-3xl md:text-4xl xl:text-5xl gothamFont uppercase font-extrabold">información práctica</div>
+            <div className="text-3xl md:text-4xl xl:text-5xl gothamFont text-center uppercase font-extrabold pt-10 md:pt-0">información práctica</div>
 
             <div className="grid grid-cols-12 mt-10 text-base md:text-xl " style={{ lineHeight: '25px' }} >
                 <div className="col-span-2"></div>

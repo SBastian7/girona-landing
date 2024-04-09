@@ -39,11 +39,11 @@ function Itinerary() {
 
     return (
         <section id="itinerary-section" className="main-content bg-visit flex flex-col text-center items-center justify-center"  style={{ minHeight: '100vh' }}>
-            <div className="text-3xl md:text-4xl xl:text-5xl mb-10 gothamFont uppercase font-extrabold">
+            <div className="text-3xl md:text-4xl xl:text-5xl mb-10 gothamFont uppercase font-extrabold pt-10 md:pt-0">
                 ITINERARIO
             </div>
             <div className="flex flex-col md:flex-row justify-center md:justify-center md:items-center md:gap-6 mt-10">
-                <Image src={ItineraryImage} alt="Itinerary Girona" className='px-3 md:px-0 rounded-3xl w-full md:w-6/12' width={0}></Image>
+                <Image src={ItineraryImage} alt="Itinerary Girona" className='px-3 md:px-0 rounded-3xl w-full md:w-6/12' width={800}></Image>
                 <div className="w-full md:w-6/12">
                     {
                         itinerary.map((step,i) => (
