@@ -31,7 +31,7 @@ function WhatIncludes() {
         <>
             <div  className='relative' style={{ bottom: '16vh' }}  id="what-includes-section" ></div>
         {carouselItems.map((item, idx) => (
-            <div className="relative">
+            <div className="relative" key={idx}>
                 {idx == 0 && <div className='text-shadow text-5xl pt-28 montiliviFont absolute w-full text-center' style={{ top: '7vh', zIndex: 2 }}>¿Qué incluye?</div>}
                 {/* <div className="text-shadow text-5xl mb-16 montiliviFont relative">{idx == 0 ? <div className="min-h-20">¿Qué incluye?</div> : <div className="min-h-20"></div> }</div> */}
                 <section className={`bg-what-includes-${idx} w-screen text-center ${idx == 0 ? 'py-40' : 'pb-32 pt-3'} text-shadow-sm `}>
