@@ -37,12 +37,12 @@ function WhatIncludes() {
 
             {carouselItems.map((item, idx) => (
                 <div id={`what-includes-section-${idx}`} className="relative" key={idx}>
-                    {idx == 0 && <div className='text-shadow pt-28 text-5xl gothamFont uppercase font-extrabold absolute w-full text-center' style={{ top: '5vh', zIndex: 2 }}>¿Qué incluye?</div>}
+                    {idx == 0 && <div className='pt-28 text-3xl md:text-4xl xl:text-5xl gothamFont uppercase font-extrabold absolute w-full text-center' style={{ top: '5vh', zIndex: 2 }}>¿Qué incluye?</div>}
                     <section className={`bg-what-includes-${idx} w-screen text-center ${idx == 0 ? 'py-40' : 'pb-32 '} text-shadow-sm `} style={{ minHeight: '100vh' }}>
-                        <div className="w-2/6 mx-auto gothamFont pt-48">
-                            <div className="text-3xl font-bold py-3">{item.title}</div>
-                            <Image src={item.icon} alt={item.title} width={idx == 0 ? 60 : 100} className={`mx-auto animate-pulse ${idx == 0 ? 'py-5' : 'py-10'}`}></Image>
-                            <div className="text-lg md:text-2xl py-3">{item.description}</div>
+                        <div className="lg:w-3/6 mx-auto gothamFont pt-48 px-3">
+                            <div className="text-2xl xl:text-3xl font-bold py-3">{item.title}</div>
+                            <Image src={item.icon} alt={item.title} width={idx == 0 ? 60 : 80} className={`mx-auto animate-pulse ${idx == 0 ? 'py-5' : 'py-10'}`}></Image>
+                            <div className="text-base md:text-xl xl:text-2xl py-3">{item.description}</div>
                         </div>
                         <NextSectionChevron target={idx + 1 == carouselItems.length ? `#itinerary-section` : `#what-includes-section-${idx + 1}`} />
                     </section>

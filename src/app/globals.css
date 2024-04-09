@@ -186,4 +186,13 @@ video {
     min-height: 25px;
     border-radius: 100%;
   }
+
+  .bg-main,
+  .bg-what-is,
+  .bg-what-includes-0,
+  .bg-what-includes-1,
+  /* .bg-visit::after, */
+  .bg-what-is {
+    background-position: center;
+}
 }
