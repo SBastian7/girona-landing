@@ -60,6 +60,7 @@ function Itinerary() {
             title="Itinerario" 
             bgSrc="bg-visit" 
             content={sectionContent} 
+            skipAnimation={true}
             // nextSection="practical-info-section"
         />
     );

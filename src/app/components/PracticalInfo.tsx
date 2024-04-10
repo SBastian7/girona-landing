@@ -83,6 +83,7 @@ function PracticalInfo() {
             title="Información práctica" 
             bgSrc="" 
             content={sectionContent} 
+            skipAnimation={true}
             // nextSection="tickets-section"
         />
     );

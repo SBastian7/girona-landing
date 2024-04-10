@@ -59,6 +59,7 @@ function Tickets() {
             title="Contacto"
             content={sectionContent}
             bgSrc=""
+            skipAnimation={true}
         />
     );
 }

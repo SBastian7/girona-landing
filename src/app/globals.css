@@ -80,7 +80,6 @@ video {
 .bg-main {
   background-image: url('../resources/img/bg-main.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: 0 70%;
   position: relative;
 
@@ -89,9 +88,41 @@ video {
 .bg-what-is {
   background-image: url('../resources/img/bg-what-is.jpg');
   background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.bg-what-includes-0 {
+  background-image: url('../resources/img/bg-what-includes.jpg');
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.bg-what-includes-1 {
+  background-image: url('../resources/img/vr-tour.jpg');
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.bg-visit {
+  background: rgb(146,142,141);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 30%;
   position: relative;
+}
+
+.bg-practical-info {
+  background: rgb(35,31,32);
+  background: -moz-linear-gradient(270deg, rgba(35,31,32,1) 0%, rgba(214,73,40,0.4962359943977591) 50%, rgba(35,31,32,1) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(35,31,32,1) 0%, rgba(214,73,40,0.4962359943977591) 50%, rgba(35,31,32,1) 100%);
+  background: linear-gradient(270deg, rgba(35,31,32,1) 15%, rgba(214,73,40,0.5) 50%, rgba(35,31,32,1) 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endColorstr="#231f20",GradientType=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 30%;
 }
 
 .bg-main::after,
@@ -119,55 +150,14 @@ video {
   z-index: 2; /* Ensure the white layer is above the background image */
 }
 
-.bg-what-includes-0 {
-  background-image: url('../resources/img/bg-what-includes.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 30%;
-  position: relative;
-}
 
-.bg-what-includes-1 {
-  background-image: url('../resources/img/vr-tour.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 30%;
-  position: relative;
-}
-
-
-.bg-visit {
-  background: rgb(146,142,141);
-  /* background: -moz-radial-gradient(circle at bottom, rgba(214,73,40,0.5) 0%, rgba(35,31,32,1) 50%, rgba(35,31,32,1) 100%);
-  background: -webkit-radial-gradient(circle at bottom, rgba(214,73,40,0.5) 0%, rgba(35,31,32,1) 50%, rgba(35,31,32,1) 100%);
-  background: radial-gradient(circle at bottom, rgba(214,73,40,0.5) 0%, rgba(35,31,32,1) 50%, rgba(35,31,32,1) 100%); */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endColorstr="#d64928",GradientType=1);
-
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 30%;
-  position: relative;
-}
-
-.bg-practical-info {
-  background: rgb(35,31,32);
-  background: -moz-linear-gradient(270deg, rgba(35,31,32,1) 0%, rgba(214,73,40,0.4962359943977591) 50%, rgba(35,31,32,1) 100%);
-  background: -webkit-linear-gradient(270deg, rgba(35,31,32,1) 0%, rgba(214,73,40,0.4962359943977591) 50%, rgba(35,31,32,1) 100%);
-  background: linear-gradient(270deg, rgba(35,31,32,1) 15%, rgba(214,73,40,0.5) 50%, rgba(35,31,32,1) 85%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endColorstr="#231f20",GradientType=1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 30%;
-}
-
-.bg-tickets {
+/* .bg-tickets {
   background: rgb(214,73,40);
   background: -moz-linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 45%, rgba(35,31,32,1) 55%, rgba(214,73,40,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(214,73,40,1) 0%, rgba(35,31,32,1) 45%, rgba(35,31,32,1) 55%, rgba(214,73,40,1) 100%);
   background: linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(214,73,40,1) 50%, rgba(35,31,32,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d64928",endColorstr="#d64928",GradientType=1);
-}
+} */
 
 /* .text-shadow {
   text-shadow: 0px 2px 5px black;
@@ -181,7 +171,31 @@ video {
   min-width: 45px;
   max-width: 45px !important;
   border-radius: 100%;
+  font-weight: bolder;
+  border: solid 1px white;
 }
+
+.animate__fadeInUp {
+  --animate-duration: 1s;
+  animation-duration: var(--animate-duration);
+  
+  animation-delay: var(--animate-delay);
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+      opacity: 1;
+      transform: none;
+  }
+}
+
 
 @media screen and (max-width:720px) {
   .rounded-circle {
