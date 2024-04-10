@@ -4,6 +4,7 @@ import IconVR from '@/resources/img/gafas-svg.svg';
 import IconMap from '@/resources/img/map-marker.svg';
 import VrTourImage from '@/resources/img/vr-tour.jpg'
 import NextSectionChevron from "./ui/NextSectionChevron";
+import SectionWrapper from "./ui/SectionWrapper";
 
 export interface CarouselItem {
     title: string;
@@ -28,26 +29,29 @@ function WhatIncludes() {
         },
     ];
 
-    const scrollToNext = (nextElem: Number) => {
-        document.getElementById(`bg-what-includes-${nextElem}`)?.click();
-    }
+    const sectionContent = (index: number) => (
+        <div className="mx-auto gothamFont  px-3">
+            <div className="text-2xl xl:text-3xl font-bold py-3">{carouselItems[index].title}</div>
+            <Image src={carouselItems[index].icon} alt={carouselItems[index].title} width={index ? 90 : 60} className={`mx-auto animate-pulse py-5`}></Image>
+            <div className="text-base md:text-xl xl:text-2xl py-3">{carouselItems[index].description}</div>
+        </div>
+    )
 
     return (
         <>
-
-            {carouselItems.map((item, idx) => (
-                <div id={`what-includes-section-${idx}`} className="relative" key={idx}>
-                    {idx == 0 && <div className='pt-28 text-3xl md:text-4xl xl:text-5xl gothamFont uppercase font-extrabold absolute w-full text-center' style={{ top: '5vh', zIndex: 2 }}>¿Qué incluye?</div>}
-                    <section className={`bg-what-includes-${idx} w-screen text-center ${idx == 0 ? 'py-40' : 'pb-32 '} text-shadow-sm `} style={{ minHeight: '100vh' }}>
-                        <div className="lg:w-3/6 mx-auto gothamFont pt-48 px-3">
-                            <div className="text-2xl xl:text-3xl font-bold py-3">{item.title}</div>
-                            <Image src={item.icon} alt={item.title} width={idx == 0 ? 60 : 80} className={`mx-auto animate-pulse ${idx == 0 ? 'py-5' : 'py-10'}`}></Image>
-                            <div className="text-base md:text-xl xl:text-2xl py-3">{item.description}</div>
-                        </div>
-                        <NextSectionChevron target={idx + 1 == carouselItems.length ? `#itinerary-section` : `#what-includes-section-${idx + 1}`} />
-                    </section>
-                </div>
-            ))}
+            <SectionWrapper
+                id="what-includes-section-0" 
+                title="¿Qué incluye?" 
+                bgSrc="bg-what-includes-0" 
+                content={sectionContent(0)} 
+                nextSection="what-includes-section-1"
+            />
+            <SectionWrapper
+                id="what-includes-section-1" 
+                bgSrc="bg-what-includes-1" 
+                content={sectionContent(1)} 
+                nextSection="itinerary-section"
+            />
         </>
     );
 }

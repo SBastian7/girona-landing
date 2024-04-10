@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import ItineraryImage from '@/resources/img/itinerary-short.jpg'
 import useIsMobile from '../hooks/useIsMobile';
-import NextSectionChevron from './ui/NextSectionChevron';
+import SectionWrapper from './ui/SectionWrapper';
 
 interface ItineraryType {
     name: string;
@@ -37,27 +37,31 @@ const itinerary: ItineraryType[] = [
 function Itinerary() {
     const isMobile: boolean = useIsMobile();
 
-    return (
-        <section id="itinerary-section" className="main-content bg-visit flex flex-col text-center items-center justify-center"  style={{ minHeight: '100vh' }}>
-            <div className="text-3xl md:text-4xl xl:text-5xl mb-10 gothamFont uppercase font-extrabold pt-10 md:pt-0">
-                ITINERARIO
-            </div>
-            <div className="flex flex-col md:flex-row justify-center md:justify-center md:items-center md:gap-6 mt-10">
-                <Image src={ItineraryImage} alt="Itinerary Girona" className='px-3 md:px-0 rounded-3xl w-full md:w-6/12' width={800}></Image>
-                <div className="w-full md:w-6/12">
-                    {
-                        itinerary.map((step,i) => (
-                            <div className="flex justify-start my-3 ms-24 md:ms-0" key={step.name}>
-                                <div className="bg-primary md:px-3 md:py-2 rounded-circle me-2 text-lg md:text-xl">{i+1}</div>
-                                <p className="pt-1 md:pt-2 text-base md:text-lg xl:text-xl">{step.name}</p>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
-                <NextSectionChevron target='#practical-info-section' />
+    const sectionContent = (
+        <div className="flex w-full flex-col md:flex-row justify-center md:justify-start md:items-center md:gap-6">
+            <Image src={ItineraryImage} alt="Itinerary Girona" className='px-3 md:px-0 rounded-3xl w-full md:w-6/12' width={0}></Image>
             
-        </section>
+            <div className="w-full">
+                {
+                    itinerary.map((step,i) => (
+                        <div className="flex justify-start my-3 ms-24 md:ms-0" key={step.name}>
+                            <div className="bg-primary md:px-3 md:py-2 rounded-circle me-2 text-lg md:text-xl">{i+1}</div>
+                            <p className="pt-1 md:pt-2 text-base md:text-lg xl:text-xl">{step.name}</p>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    )
+
+    return (
+        <SectionWrapper
+            id="itinerary-section" 
+            title="Itinerario" 
+            bgSrc="bg-visit" 
+            content={sectionContent} 
+            // nextSection="practical-info-section"
+        />
     );
 }
 

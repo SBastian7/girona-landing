@@ -72,6 +72,11 @@ video {
   width: 100%;
 }
 
+.main-content {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
 .bg-main {
   background-image: url('../resources/img/bg-main.jpg');
   background-size: cover;
