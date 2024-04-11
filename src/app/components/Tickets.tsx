@@ -3,8 +3,11 @@ import Button from "./ui/Button";
 import Logo from '@/resources/img/logo.png'
 import LogoBstadium from '@/resources/img/Powered-Bstadium.svg'
 import SectionWrapper from "./ui/SectionWrapper";
+import useIsMobile from "../hooks/useIsMobile";
 
 function Tickets() {
+    const isMobile = useIsMobile();
+
     const sectionContent = (
         <div className="w-full text-center">
             <div className="md:text-2xl pb-7 font-bold">
@@ -39,10 +42,11 @@ function Tickets() {
                     Montilivi Tour Interactivo
                 </div>
             </div>
-            <div className="w-2/6 mx-auto">
-
-            <Button variant="secondary" title="Comprar entradas" link="https://bstadium.es/tours-originales/" />
+            {/* <div className="flex flex-col justify-center"> */}
+            <div className="mt-10 w-4/6 md:w-2/6 mx-auto" style={{ width: isMobile ? '80vw' : '20vw' }}>
+                <Button variant="secondary" title="Comprar entradas" link="https://bstadium.es/tours-originales/" />
             </div>
+            {/* </div> */}
             <div className="pt-10 mx-auto">
                 <Image width={150} height={150} src={Logo} className="aspect-square mx-auto" alt="Tour Interactivo logo" />
             </div>
