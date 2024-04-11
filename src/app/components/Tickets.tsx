@@ -44,7 +44,7 @@ function Tickets() {
             </div>
             {/* <div className="flex flex-col justify-center"> */}
             <div className="mt-10 w-4/6 md:w-2/6 mx-auto" style={{ width: isMobile ? '80vw' : '20vw' }}>
-                <Button variant="secondary" title="Comprar entradas" link="https://bstadium.es/tours-originales/" />
+                <Button variant="secondary" title="Comprar entradas" link="https://bstadium.es/tours-originales/tour-por-el-estadio-montilivi-estadio-del-girona-fc/" />
             </div>
             {/* </div> */}
             <div className="pt-10 mx-auto">

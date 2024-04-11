@@ -22,7 +22,7 @@ function Landing() {
                 Vive una emocionante experiencia para todos los aficionados <br /> que quieran sentir al Girona FC más cerca que nunca
             </p>
             <div className="mt-10 z-10" style={{ width: isMobile ? '80vw' : '20vw' }} >
-                <Button variant="secondary" title="Comprar entradas" link="https://bstadium.es/tours-originales/" />
+                <Button variant="secondary" title="Comprar entradas" link="https://bstadium.es/tours-originales/tour-por-el-estadio-montilivi-estadio-del-girona-fc/" />
             </div>
             {/* <NextSectionChevron target='#what-is-section' /> */}
         </section>

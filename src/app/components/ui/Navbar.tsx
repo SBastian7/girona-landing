@@ -4,7 +4,7 @@ import Logo from '@/resources/img/logo.png'
 
 function Navbar() {
     return (
-        <div className="content flex justify-between text-base  xl:text-lg font-bold bg-navbar absolute " style={{ 'fontFamily': 'gotham' }}>
+        <div className="content flex justify-between text-base  xl:text-lg font-bold bg-navbar absolute " style={{ fontFamily: 'gotham', zIndex: 50 }}>
             <a className="ps-5" href="#main-section">
                 <Image width={100} height={100} src={Logo} className="aspect-square" alt="Tour Interactivo logo" />
             </a>
