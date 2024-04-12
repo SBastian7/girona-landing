@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 
-import ItineraryImage from '@/resources/img/itinerary-short.jpg'
+import ItineraryImage from '@/resources/img/itinerary-short-2.jpg'
 import useIsMobile from '../hooks/useIsMobile';
 import SectionWrapper from './ui/SectionWrapper';
 
@@ -46,7 +46,7 @@ function Itinerary() {
                     itinerary.map((step,i) => (
                         <div className="flex justify-start my-3 ms-24 md:ms-0" key={step.name}>
                             <div className="bg-primary md:px-3 md:py-2 rounded-circle me-2 text-lg md:text-xl">{i+1}</div>
-                            <p className="pt-1 md:pt-2 text-base md:text-lg xl:text-xl">{step.name}</p>
+                            <p className="pt-1 md:pt-2 text-base md:text-lg xl:text-xl font-bold" style={{ color: '#484443' }}>{step.name}</p>
                         </div>
                     ))
                 }
@@ -61,6 +61,7 @@ function Itinerary() {
             bgSrc="bg-visit" 
             content={sectionContent} 
             skipAnimation={true}
+            titleClass='text-black'
             // nextSection="practical-info-section"
         />
     );

@@ -34,9 +34,9 @@ function Tickets() {
             </div>
 
             <div className="my-10">
-                {/* <div className="gothamFont text-3xl">
+                <div className="gothamFont text-3xl">
                     Descubre y disfruta del
-                </div> */}
+                </div>
                 <br />
                 <div className="montiliviFont uppercase text-5xl">
                     Montilivi Tour Interactivo

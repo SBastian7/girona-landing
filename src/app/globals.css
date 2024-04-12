@@ -115,7 +115,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endCo
 }
 
 .bg-visit {
-  background: rgb(146,142,141);
+  background: #D6D3D4;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 30%;
@@ -189,7 +189,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endCo
   max-width: 45px !important;
   border-radius: 100%;
   font-weight: bolder;
-  border: solid 1px white;
+  box-shadow: 0px 0px 5px white;
 }
 
 @media screen and (min-width:720px) {
