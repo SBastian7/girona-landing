@@ -1,14 +1,13 @@
 import useIsMobile from "../hooks/useIsMobile";
 import Button from "./ui/Button";
-import NextSectionChevron from "./ui/NextSectionChevron";
 
 function Landing() {
     const isMobile = useIsMobile();
 
     return (
         <section id="main-section" className={`main-content relative flex flex-col items-center text-shadow-sm justify-center ${isMobile ? 'bg-main' : ''}`} style={{ minHeight: '100vh' }}>
-            <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover z-0 hidden md:flex">
-                <source src="/videos/bg-video.mp4" type="video/mp4" />
+            <video autoPlay loop muted preload="auto" className="absolute top-0 left-0 w-full h-full object-cover z-0 hidden md:flex">
+                <source src="https://bstadium.s3.us-east-2.amazonaws.com/bg-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             {/* Content */}
@@ -24,7 +23,6 @@ function Landing() {
             <div className="mt-10 z-10" style={{ width: isMobile ? '80vw' : '20vw' }} >
                 <Button variant="secondary" title="Comprar entradas" link="https://bstadium.es/tours-originales/tour-por-el-estadio-montilivi-estadio-del-girona-fc/" />
             </div>
-            {/* <NextSectionChevron target='#what-is-section' /> */}
         </section>
     );
 }
