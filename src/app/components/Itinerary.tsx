@@ -44,7 +44,7 @@ function Itinerary() {
             <div className="w-full">
                 {
                     itinerary.map((step,i) => (
-                        <div className="flex justify-start my-3 ms-24 md:ms-0" key={step.name}>
+                        <div className="flex justify-start my-3 ms-16 md:ms-0" key={step.name}>
                             <div className="bg-primary md:px-3 md:py-2 rounded-circle me-2 text-lg md:text-xl">{i+1}</div>
                             <p className="pt-1 md:pt-2 text-base md:text-lg xl:text-xl font-bold" style={{ color: '#484443' }}>{step.name}</p>
                         </div>
