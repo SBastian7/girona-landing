@@ -69,7 +69,7 @@ function PracticalInfo() {
             </div>
             <div className="col-span-11 md:col-span-9 ps-7 pt-4 md:pt-7 mb-4">
                 Para gestionar las reservas como colegio, institución, <br />
-                grupo privado o empresa rellenad este <a href="" className="underline">formulario</a>.
+                grupo privado o empresa, rellenad este <a href="https://docs.google.com/forms/d/1nZD26FC6w_hi8FwmMgXIL80pIUZYEZ9Iw7L0vENJi5I/edit" target="_blank" className="underline">formulario</a>.
             </div>
         </div>
     )

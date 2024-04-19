@@ -33,7 +33,7 @@ function Tickets() {
                 </a>
             </div>
 
-            <div className="my-10">
+            <div className="mt-24">
                 <div className="gothamFont text-3xl">
                     Descubre y disfruta del
                 </div>

@@ -7,7 +7,7 @@ function Landing() {
     return (
         <section id="main-section" className={`main-content relative flex flex-col items-center text-shadow-sm justify-center ${isMobile ? 'bg-main' : ''}`} style={{ minHeight: '100vh' }}>
             <video autoPlay loop muted preload="auto" className="absolute top-0 left-0 w-full h-full object-cover z-0 hidden md:flex">
-                <source src="https://bstadium.s3.us-east-2.amazonaws.com/bg-video.mp4" type="video/mp4" />
+                <source src="https://bstadium.s3.us-east-2.amazonaws.com/TOUR+MONTILIVI_SIN.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             {/* Content */}
@@ -17,7 +17,7 @@ function Landing() {
             <div className="gothamBold text-xl md:text-4xl xl:text-5xl relative z-10">
                 Visita el estadio del Girona FC
             </div>
-            <p className="text-lg md:mt-80 md:pt-16 md:text-2xl xl:text-4xl gothamFont mt-9 text-center px-3 relative z-10">
+            <p className="text-lg md:mt-10 md:pt-16 md:text-2xl xl:text-4xl gothamFont mt-9 text-center px-3 relative z-10">
                 Vive una emocionante experiencia para todos los aficionados <br /> que quieran sentir al Girona FC más cerca que nunca
             </p>
             <div className="mt-10 z-10" style={{ width: isMobile ? '80vw' : '20vw' }} >
