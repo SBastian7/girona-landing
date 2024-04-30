@@ -223,6 +223,6 @@ to {
   /* .bg-visit::after, */
   .bg-what-is {
     background-position: center;
-    /* background-attachment: scroll; */
+    background-attachment: fixed;
 }
 }
