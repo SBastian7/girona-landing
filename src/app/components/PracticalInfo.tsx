@@ -26,7 +26,7 @@ function PracticalInfo() {
                 <br />
                 {t('date_4')}
                 <br />
-                <span className="text-base">{t('date_5')}</span>
+                <span className="md:text-base">{t('date_5')}</span>
                 <br />
             </div>
 

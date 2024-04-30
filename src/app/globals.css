@@ -85,14 +85,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endCo
   padding-bottom: 7vh;
 }
 
-.bg-main {
-  background-image: url('../resources/img/bg-main.jpg');
-  background-size: cover;
-  background-position: 0 70%;
-  position: relative;
-
-}
-
 .bg-what-is {
   background-image: url('../resources/img/bg-what-is.jpg');
   background-size: cover;
@@ -148,7 +140,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endCo
   background-color: rgba(90, 73, 73, 0.5); /* White color with 20% opacity */
   z-index: 1; /* Ensure the white layer is above the background image */
 }
-.bg-main>*,
+/* .bg-main>*, */
 .bg-what-includes>*,
 .bg-what-includes-0>*,
 .bg-what-includes-1>*,
@@ -231,6 +223,6 @@ to {
   /* .bg-visit::after, */
   .bg-what-is {
     background-position: center;
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
 }
 }
