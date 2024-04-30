@@ -1,41 +1,42 @@
+'use client'
 import React from 'react';
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 import ItineraryImage from '@/resources/img/itinerary-short-2.jpg'
-import useIsMobile from '../hooks/useIsMobile';
 import SectionWrapper from './ui/SectionWrapper';
 
 interface ItineraryType {
     name: string;
 }
 
-const itinerary: ItineraryType[] = [
-    {
-        name: 'Entrada y Bienvenida'
-    },
-    {
-        name: 'Sala de Prensa'
-    },
-    {
-        name: 'Vestidor Local'
-    },
-    {
-        name: 'Vestidor Visitante'
-    },
-    {
-        name: 'Palco Presidencial'
-    },
-    {
-        name: 'Terreno de Juego'
-    },
-    {
-        name: 'Tienda Oficial'
-    },
-
-]
-
 function Itinerary() {
-    const isMobile: boolean = useIsMobile();
+    const t = useTranslations('itinerary')
+
+    const itinerary: ItineraryType[] = [
+        {
+            name: t('item_1')
+        },
+        {
+            name: t('item_2')
+        },
+        {
+            name: t('item_3')
+        },
+        {
+            name: t('item_4')
+        },
+        {
+            name: t('item_5')
+        },
+        {
+            name: t('item_6')
+        },
+        {
+            name: t('item_7')
+        },
+    
+    ]
 
     const sectionContent = (
         <div className="flex w-full flex-col md:flex-row justify-center md:justify-start md:items-center md:gap-6">
@@ -57,7 +58,7 @@ function Itinerary() {
     return (
         <SectionWrapper
             id="itinerary-section" 
-            title="Itinerario" 
+            title={t('title')}
             bgSrc="bg-visit" 
             content={sectionContent} 
             skipAnimation={true}

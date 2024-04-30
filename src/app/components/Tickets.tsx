@@ -1,4 +1,7 @@
+'use client'
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+
 import Button from "./ui/Button";
 import Logo from '@/resources/img/logo.png'
 import LogoBstadium from '@/resources/img/Powered-Bstadium.svg'
@@ -6,12 +9,13 @@ import SectionWrapper from "./ui/SectionWrapper";
 import useIsMobile from "../hooks/useIsMobile";
 
 function Tickets() {
-    const isMobile = useIsMobile();
+    const t = useTranslations('tickets')
+    const isMobile = useIsMobile()
 
     const sectionContent = (
         <div className="w-full text-center">
             <div className="md:text-2xl pb-7 font-bold">
-                Consulta tus dudas o amplía tu información
+                {t('subtitle_1')}
             </div>
             <br />
             <div className="text-lg flex justify-center gap-3">
@@ -19,7 +23,7 @@ function Tickets() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                 </svg>
                 <a href="tel:+34618453690">
-                    +34 618 45 36 90
+                    {t('contact_1')}
                 </a>
             </div>
             <div className="text-lg py-4 flex justify-center gap-3">
@@ -29,22 +33,22 @@ function Tickets() {
                     </svg>
                 </span>
                 <a href="mailto:hola@bstadium.es">
-                    hola@bstadium.es
+                    {t('contact_2')}
                 </a>
             </div>
 
             <div className="mt-24">
                 <div className="gothamFont text-3xl">
-                    Descubre y disfruta del
+                    {t('subtitle_2')}
                 </div>
                 <br />
                 <div className="montiliviFont uppercase text-5xl">
-                    Montilivi Tour Interactivo
+                    {t('title_2')}
                 </div>
             </div>
             {/* <div className="flex flex-col justify-center"> */}
             <div className="mt-10 w-4/6 md:w-2/6 mx-auto" style={{ width: isMobile ? '80vw' : '20vw' }}>
-                <Button variant="secondary" title="Comprar entradas" link="https://bstadium.es/tours-originales/tour-por-el-estadio-montilivi-estadio-del-girona-fc/" />
+                <Button variant="secondary" title={t('call_to_action')} link="https://bstadium.es/tours-originales/tour-por-el-estadio-montilivi-estadio-del-girona-fc/" />
             </div>
             {/* </div> */}
             <div className="pt-10 mx-auto">
@@ -60,7 +64,7 @@ function Tickets() {
     return (
         <SectionWrapper
             id="tickets-section"
-            title="Contacto"
+            title={t('title_1')}
             content={sectionContent}
             bgSrc=""
             skipAnimation={true}

@@ -1,10 +1,9 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    i18n: {
-        locales: ['en', 'eu', 'es'],
-        localeDetection: false,
-        defaultLocale: 'es',
-    },
     webpack: (config, { dev, isServer }) => {
         // Add PostCSS loader only for client-side JavaScript bundle
         if (!isServer) {
@@ -32,4 +31,4 @@ const nextConfig = {
     },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

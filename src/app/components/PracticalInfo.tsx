@@ -1,24 +1,33 @@
-import useIsMobile from "../hooks/useIsMobile";
-import NextSectionChevron from "./ui/NextSectionChevron";
+'use client'
+import { useTranslations } from "next-intl";
+
+import useIsMobile from "@/app/hooks/useIsMobile";
+
 import SectionWrapper from "./ui/SectionWrapper";
 
 function PracticalInfo() {
+    const t = useTranslations('practical_info');
     const isMobile = useIsMobile();
 
     const sectionContent = (
         <div className="grid grid-cols-12 text-sm md:text-xl ps-4 md:ps-0 text-start" style={{ lineHeight: isMobile ? '17px' : '25px' }} >
             <div className="hidden md:block col-span-2"></div>
-            <div className="col-span-1 pt-1 md:pt-3">
+            <div className="col-span-1 pt-1 md:pt-8">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 md:w-10 md:h-10">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
                 </svg>
             </div>
             <div className="col-span-11 md:col-span-9 ps-7">
-                Viernes: 18:00h y 19:00h
+                {t('date_1')}
                 <br />
-                Sábado: 11:00h, 12:00h y 19:00h
+                {t('date_2')}
                 <br />
-                *Horarios sujetos a cambios.
+                {t('date_3')}
+                <br />
+                {t('date_4')}
+                <br />
+                <span className="text-base">{t('date_5')}</span>
+                <br />
             </div>
 
             <div className="hidden md:block  col-span-2"></div>
@@ -28,7 +37,7 @@ function PracticalInfo() {
                 </svg>
             </div>
             <div className="col-span-11 md:col-span-9 ps-7 pt-5 my-4">
-                1 hora
+                {t('duration')}
             </div>
 
             <div className="hidden md:block col-span-2"></div>
@@ -38,7 +47,9 @@ function PracticalInfo() {
                 </svg>
             </div>
             <div className="col-span-11 md:col-span-9 ps-7 pt-5 mb-4">
-                Acceso permitido a todos los públicos. <br />Entrada gratuita para menores de 4 años.
+                {t('minors_1')}
+                <br />
+                {t('minors_2')}
             </div>
 
             <div className="hidden md:block col-span-2"></div>
@@ -48,7 +59,7 @@ function PracticalInfo() {
                 </svg>
             </div>
             <div className="col-span-11 md:col-span-9 ps-7 pt-8 mb-4">
-                Catalán, Castellano, Inglés y Francés.
+                {t('languages')}
             </div>
 
             <div className="hidden md:block col-span-2"></div>
@@ -58,7 +69,7 @@ function PracticalInfo() {
                 </svg>
             </div>
             <div className="col-span-11 md:col-span-9 ps-7 pt-8 mb-4">
-                Cancelacíón gratuita hasta 15 días antes.
+                {t('cancelation')}
             </div>
 
             <div className="hidden md:block col-span-2"></div>
@@ -68,8 +79,10 @@ function PracticalInfo() {
                 </svg>
             </div>
             <div className="col-span-11 md:col-span-9 ps-7 pt-4 md:pt-7 mb-4">
-                Para gestionar las reservas como colegio, institución, <br />
-                grupo privado o empresa, rellenad este <a href="https://docs.google.com/forms/d/1nZD26FC6w_hi8FwmMgXIL80pIUZYEZ9Iw7L0vENJi5I/edit" target="_blank" className="underline">formulario</a>.
+                {t('groups_1')}
+                <br />
+                {t('groups_2')} 
+                <a href="https://docs.google.com/forms/d/1nZD26FC6w_hi8FwmMgXIL80pIUZYEZ9Iw7L0vENJi5I/edit" target="_blank" className="underline">{t('groups_a')}</a>.
             </div>
         </div>
     )
@@ -77,11 +90,10 @@ function PracticalInfo() {
     return (
         <SectionWrapper
             id="practical-info-section" 
-            title="Información práctica" 
+            title={t('title')}
             bgSrc="" 
             content={sectionContent} 
             skipAnimation={true}
-            // nextSection="tickets-section"
         />
     );
 }

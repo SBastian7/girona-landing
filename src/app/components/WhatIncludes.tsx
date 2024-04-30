@@ -1,9 +1,10 @@
+import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
-import Carousel from "./ui/Carousel";
+
 import IconVR from '@/resources/img/gafas-svg.svg';
 import IconMap from '@/resources/img/map-marker.svg';
 import VrTourImage from '@/resources/img/vr-tour.jpg'
-import NextSectionChevron from "./ui/NextSectionChevron";
+
 import SectionWrapper from "./ui/SectionWrapper";
 
 export interface CarouselItem {
@@ -14,18 +15,20 @@ export interface CarouselItem {
 }
 
 function WhatIncludes() {
+    const t = useTranslations('what_includes');
+
     const carouselItems: CarouselItem[] = [
         {
-            title: 'VISITA NUESTROS ESPACIOS',
+            title: t('subtitle_1'),
             icon: IconMap,
             img: VrTourImage,
-            description: "Visitarás los lugares más exclusivos de Montilivi."
+            description: t('p_1')
         },
         {
-            title: 'EXPERIENCIA INMERSIVA',
+            title: t('subtitle_2'),
             icon: IconVR,
             img: VrTourImage,
-            description: "A través de las gafas de realidad virtual, podrás vivir el ambiente de un partido del Girona FC y sentirás como viven los jugadores los momentos previos a un partido con el estadio lleno."
+            description: t('p_2')
         },
     ];
 
@@ -41,7 +44,7 @@ function WhatIncludes() {
         <>
             <SectionWrapper
                 id="what-includes-section-0" 
-                title="¿Qué incluye?" 
+                title={t('title')}
                 bgSrc="bg-what-includes-0" 
                 content={sectionContent(0)} 
                 nextSection="what-includes-section-1"

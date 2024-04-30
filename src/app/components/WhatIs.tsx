@@ -1,19 +1,22 @@
-import NextSectionChevron from "./ui/NextSectionChevron";
+import {useTranslations} from 'next-intl';
+
 import SectionWrapper from "./ui/SectionWrapper";
 
 function WhatIs() {
+    const t = useTranslations('what_is')
+
     const sectionContent = (
         <p className="">
-            Descubre el Estadio Montilivi a través de una visita guiada donde podrás conocer los lugares más exclusivos del estadio y conocer a fondo las anécdotas y los momentos históricos del club.
+            {t('p_1')}
             <br />
             <br />
-            Visitarás la sala de prensa, los vestuarios del equipo local y visitante, las zonas más exclusivas del estadio, entre las que se encuentran el palco presidencial... y, tendrás la oportunidad de acceder al terreno de juego a través del túnel de vestuarios, dónde podrás sacarte una foto junto al terreno de juego y los banquillos.
+            {t('p_2')}
         </p>
     )
     return (
         <SectionWrapper 
             id="what-is-section" 
-            title="¿Qué es?" 
+            title={t('title')}
             bgSrc="bg-what-is" 
             content={sectionContent} 
             nextSection="what-includes-section-0"

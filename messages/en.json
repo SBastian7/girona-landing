@@ -1,0 +1,67 @@
+{
+    "navigation": {
+        "nav_1": "What is it?",
+        "nav_2": "What’s included?",
+        "nav_3": "Itinerary",
+        "nav_4": "Adittional information",
+        "nav_5": "Contact",
+        "lng_1": "SPA",
+        "lng_2": "CAT",
+        "lng_3": "ENG",
+        "lng_4": "FR"
+    },
+    "landing": {
+        "title": "MONTILIVI INTERACTIVE TOUR",
+        "subtitle_1": "Visit the Girona FC stadium",
+        "p_1": "Live an exciting experience for all the fans",
+        "p_2": "who want to feel Girona FC closer than ever before.",
+        "call_to_action": "BUY TICKETS"
+    },
+    "what_is": {
+        "title": "What is it?",
+        "p_1": "Discover the Montilivi Stadium through a guided tour where you will get to know the most exclusive places of the stadium and learn about the great stories and historical moments of the club.",
+        "p_2": "You will visit the press room, the home and away team changing rooms, the most exclusive areas of the stadium, including the presidential box... and you will have the opportunity to access the pitch through the player’s tunnel, where you can have your photo taken next to the pitch and the benches."
+    },
+    "what_includes": {
+        "title": "What’s included?",
+        "subtitle_1": "Visit our spaces",
+        "p_1": "You will visit the most exclusive places in Montilivi.",
+        "subtitle_2": "Immersive experience",
+        "p_2": "Through the virtual reality glasses, you will be able to experience the atmosphere of a Girona FC matchday and you will feel how the players live the moments before a match with a full stadium."
+    },
+    "itinerary": {
+        "title": "Itinerary",
+        "item_1": "Entrance y Welcome",
+        "item_2": "Press Room",
+        "item_3": "Local Dressing Room",
+        "item_4": "Visiting Dressing Room",
+        "item_5": "Presidential Stage",
+        "item_6": "Playground",
+        "item_7": "Official Store"
+    },
+    "practical_info": {
+        "title": "Adittional information",
+        "date_1": "Thursday: 6pm and 7pm",
+        "date_2": "Friday: 6pm and 7pm",
+        "date_3": "Saturday: 11am, 12pm and 6p, 7pm",
+        "date_4": "Sunday: 11am and 12am",
+        "date_5": "*Times subject to change.",
+        "duration": "1 hour",
+        "minors_1": "Access allowed for all audiences.",
+        "minors_2": "Free admission for children under 4 years old.",
+        "languages": "Catalan, Spanish, English and French.",
+        "cancelation": "Free cancellation up to 15 days in advance.",
+        "groups_1": "Bookings for schools, institutions, private ",
+        "groups_2": "groups or companies, please fill in this ",
+        "groups_a": "form"
+    },
+    "tickets": {
+        "title_1": "Contact",
+        "subtitle_1": "Ask your questions or ask for more information",
+        "contact_1": "+34 618 45 36 90",
+        "contact_2": "hola@bstadium.es",
+        "subtitle_2": "Discover and enjoy the",
+        "title_2": "MONTILIVI INTERACTIVE TOUR",
+        "call_to_action": "Buy Tickets"
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "navigation": {
+        "nav_1": "¿Qué es?",
+        "nav_2": "¿Qué incluye?",
+        "nav_3": "Itinerario",
+        "nav_4": "Información práctica",
+        "nav_5": "Contacto",
+        "lng_1": "CAS",
+        "lng_2": "CAT",
+        "lng_3": "ENG",
+        "lng_4": "FR"
+    },
+    "landing": {
+        "title": "MONTILIVI TOUR INTERACTIVO",
+        "subtitle_1": "Visita el estadio del Girona FC",
+        "p_1": "Vive una emocionante experiencia para todos los aficionados",
+        "p_2": "que quieran sentir al Girona FC más cerca que nunca",
+        "call_to_action": "Comprar entradas"
+    },
+    "what_is": {
+        "title": "¿Qué es?",
+        "p_1": "Descubre el Estadio Montilivi a través de una visita guiada donde podrás conocer los lugares más exclusivos del estadio y conocer a fondo las anécdotas y los momentos históricos del club.",
+        "p_2": "Visitarás la sala de prensa, los vestuarios del equipo local y visitante, las zonas más exclusivas del estadio, entre las que se encuentran el palco presidencial... y, tendrás la oportunidad de acceder al terreno de juego a través del túnel de vestuarios, dónde podrás sacarte una foto junto al terreno de juego y los banquillos."
+    },
+    "what_includes": {
+        "title": "¿Qué incluye?",
+        "subtitle_1": "VISITA NUESTROS ESPACIOS",
+        "p_1": "Visitarás los lugares más exclusivos de Montilivi.",
+        "subtitle_2": "EXPERIENCIA INMERSIVA",
+        "p_2": "A través de las gafas de realidad virtual, podrás vivir el ambiente de un partido del Girona FC y sentirás como viven los jugadores los momentos previos a un partido con el estadio lleno."
+    },
+    "itinerary": {
+        "title": "Itinerario",
+        "item_1": "Entrada y Bienvenida",
+        "item_2": "Sala de Prensa",
+        "item_3": "Vestidor Local",
+        "item_4": "Vestidor Visitante",
+        "item_5": "Palco Presidencial",
+        "item_6": "Terreno de Juego",
+        "item_7": "Tienda Oficial"
+    },
+    "practical_info": {
+        "title": "Información práctica",
+        "date_1": "Jueves: 18:00 y 19:00 h",
+        "date_2": "Viernes:18:00h y 19:00 h",
+        "date_3": "Sábado: 11:00h, 12:00h, 18:00 y 19:00h",
+        "date_4": "Domingo: 11:00h y 12:00h",
+        "date_5": "*Horarios sujetos a cambios.",
+        "duration": "1 Hora",
+        "minors_1": "Acceso permitido a todos los públicos.",
+        "minors_2": "Entrada gratuita para menores de 4 años",
+        "languages": "Catalán, Castellano, Inglés y Francés",
+        "cancelation": "Cancelacíón gratuita hasta 15 días antes",
+        "groups_1": "Para gestionar las reservas como colegio, institución,",
+        "groups_2": "grupo privado o empresa rellenad este ",
+        "groups_a": "formulario"
+    },
+    "tickets": {
+        "title_1": "Contacto",
+        "subtitle_1": "Consulta tus dudas o amplía tu información",
+        "contact_1": "+34 618 45 36 90",
+        "contact_2": "hola@bstadium.es",
+        "subtitle_2": "Descubre y disfruta del",
+        "title_2": "MONTILIVI TOUR INTERACTIVO",
+        "call_to_action": "Comprar entradas"
+    }
+}
