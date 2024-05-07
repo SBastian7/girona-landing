@@ -56,9 +56,9 @@ function Navbar() {
                         {t('nav_5')}
                     </a>
                     <div className="flex gap-2 mt-20">
-                        <Link href="/es">{t('lng_1')}</Link>
+                        <Link href="/ca">{t('lng_1')}</Link>
                         <div>|</div>
-                        <Link href="/ca">{t('lng_2')}</Link>
+                        <Link href="/es">{t('lng_2')}</Link>
                         <div>|</div>
                         <Link href="/en">{t('lng_3')}</Link>
                         <div>|</div>
@@ -84,9 +84,9 @@ function Navbar() {
                 </a>
             </div>
             <div className="pe-5 md:flex gap-2 hidden">
-                <Link href="/es">{t('lng_1')}</Link>
+                <Link href="/ca">{t('lng_1')}</Link>
                 <div>|</div>
-                <Link href="/ca">{t('lng_2')}</Link>
+                <Link href="/es">{t('lng_2')}</Link>
                 <div>|</div>
                 <Link href="/en">{t('lng_3')}</Link>
                 <div>|</div>

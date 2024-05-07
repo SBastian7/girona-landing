@@ -5,8 +5,8 @@
         "nav_3": "Itinerario",
         "nav_4": "Información práctica",
         "nav_5": "Contacto",
-        "lng_1": "CAS",
-        "lng_2": "CAT",
+        "lng_1": "CAT",
+        "lng_2": "ESP",
         "lng_3": "ENG",
         "lng_4": "FR"
     },
@@ -25,7 +25,7 @@
     "what_includes": {
         "title": "¿Qué incluye?",
         "subtitle_1": "VISITA NUESTROS ESPACIOS",
-        "p_1": "Visitarás los lugares más exclusivos de Montilivi.",
+        "p_1": "Visita los espacios más exclusivos de Montilivi-5% de descuento en la tienda oficial del Girona FC-Pulsera exclusiva de recuerdo",
         "subtitle_2": "EXPERIENCIA INMERSIVA",
         "p_2": "A través de las gafas de realidad virtual, podrás vivir el ambiente de un partido del Girona FC y sentirás como viven los jugadores los momentos previos a un partido con el estadio lleno."
     },

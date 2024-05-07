@@ -1,12 +1,12 @@
 {
   "navigation": {
-      "nav_1": "¿Què és?",
-      "nav_2": "¿Què inclou?",
+      "nav_1": "Què és?",
+      "nav_2": "Què inclou?",
       "nav_3": "Itinerari",
       "nav_4": "Info Pràctica",
       "nav_5": "Contacte",
-      "lng_1": "ESP",
-      "lng_2": "CAT",
+      "lng_1": "CAT",
+      "lng_2": "CAS",
       "lng_3": "ENG",
       "lng_4": "FRA"
   },
@@ -18,14 +18,14 @@
       "call_to_action": "Comprar entrades"
   },
   "what_is": {
-      "title": "¿Què és?",
+      "title": "Què és?",
       "p_1": "Descobreix l'Estadi Montilivi a través d'una visita guiada on podràs visitar els llocs més exclusius de l'estadi i conèixer a fons les anècdotes i els moments històrics del Club.",
       "p_2": "Visitaràs la sala de prensa, els vestidors de l'equip local i visitant, les zones més exclusives de l'estadi i tindràs l'oportunitat d'accedir al terreny de joc a través del túnel de vestidors, on podràs fer-te una foto al costat del terreny de joc i les banquetes."
   },
   "what_includes": {
-      "title": "¿Què inclou?",
+      "title": "Què inclou?",
       "subtitle_1": "Visita els nostres espais",
-      "p_1": "Visites els llocs més exclusius de Montilivi.",
+      "p_1": "Visita els espais més exclusius de Montilivi-5% de descompte a la Botiga Oficial del Girona FC-Pulsera exclusiva de record",
       "subtitle_2": "Experiència immersiva",
       "p_2": "A travès de les ulleres de realitat virtual, podràs viure l'ambient d'un partit del Girona FC i sentiràs com viuen els jugadors els moments previs a un partit amb l'estadi ple."
   },
@@ -50,7 +50,7 @@
       "minors_1": "Visita apta per a tots els públics.",
       "minors_2": "Entrada gratuïta per a menors de 4 anys.",
       "languages": "Català, Castellà, Anglès i Francès",
-      "cancelation": "Free cancellation up to 15 days in advance.",
+      "cancelation": "Cancel·lació gratuïta fins a 15 dies abans",
       "groups_1": "Per gestionar les reserves com a col·legi, institució,",
       "groups_2": "grup privat o empresa ompliu aquest ",
       "groups_a": "formulari"
