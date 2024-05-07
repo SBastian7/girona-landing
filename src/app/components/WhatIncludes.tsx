@@ -12,7 +12,7 @@ export interface CarouselItem {
     title: string;
     icon: StaticImageData;
     img: StaticImageData; // Assuming IconVR is a string representing the path to the icon
-    description: string[] | string;
+    description: any;
 }
 
 function WhatIncludes() {
