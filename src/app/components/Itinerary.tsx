@@ -35,22 +35,28 @@ function Itinerary() {
         {
             name: t('item_7')
         },
-    
     ]
 
     const sectionContent = (
-        <div className="flex w-full flex-col md:flex-row justify-center md:justify-start md:items-center md:gap-6">
-            <Image src={ItineraryImage} alt="Itinerary Girona" className='px-3 md:px-0 rounded-3xl w-full md:w-6/12' width={0}></Image>
-            
-            <div className="w-full">
-                {
-                    itinerary.map((step,i) => (
-                        <div className="flex justify-start my-3 ms-16 md:ms-0" key={step.name}>
-                            <div className="bg-primary md:px-3 md:py-2 rounded-circle me-2 text-lg md:text-xl">{i+1}</div>
-                            <p className="pt-1 md:pt-2 text-base md:text-lg xl:text-xl font-bold" style={{ color: '#484443' }}>{step.name}</p>
-                        </div>
-                    ))
-                }
+        <div className="">
+            <div className="flex w-full flex-col md:flex-row justify-center md:justify-start md:items-center md:gap-6">
+                <Image src={ItineraryImage} alt="Itinerary Girona" className='px-3 md:px-0 rounded-3xl w-full md:w-6/12' width={0}></Image>
+                
+                <div className="w-full">
+                    {
+                        itinerary.map((step,i) => (
+                            <div className="flex justify-start my-3 ms-16 md:ms-0" key={step.name}>
+                                {
+                                    i != 7 && <div className="bg-primary md:px-3 md:py-2 rounded-circle me-2 text-lg md:text-xl">{i+1}</div>
+                                }                            
+                                <p className="pt-1 md:pt-2 text-base md:text-lg xl:text-xl font-bold" style={{ color: '#484443' }}>{step.name}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+            <div className="pt-10 font-semibold" style={{color: '#484443'}}>
+                {t('item_8')}
             </div>
         </div>
     )
