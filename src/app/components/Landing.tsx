@@ -11,7 +11,7 @@ function Landing() {
     return (
         <section id="main-section" className={`main-content relative flex flex-col items-center text-shadow-sm justify-center ${isMobile ? 'bg-main' : ''}`} style={{ minHeight: '100vh' }}>
             <video autoPlay playsInline loop muted preload="auto" className={`absolute flex left-0 top-0 ${isMobile ? 'object-cover h-full' : 'w-full h-full object-cover'}`} style={{ height: '100vh' }}>
-                <source src="https://bstadium.s3.us-east-2.amazonaws.com/TOUR+MONTILIVI_SIN.mp4" type="video/mp4" />
+                <source src="https://bstadium.es/media/attachments/blobs/2025/01/10/XoV5a3eoE6MB4nXeXMLgnL_tour_bg.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             {/* Content */}
