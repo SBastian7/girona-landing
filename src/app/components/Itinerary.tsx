@@ -55,9 +55,6 @@ function Itinerary() {
                     }
                 </div>
             </div>
-            <div className="pt-10 font-semibold" style={{color: '#484443'}}>
-                {t('item_8')}
-            </div>
         </div>
     )
 
